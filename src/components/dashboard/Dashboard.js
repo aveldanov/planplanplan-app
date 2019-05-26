@@ -7,9 +7,10 @@ import { connect } from 'react-redux';
 export class Dashboard extends Component {
 
   render() {
-    console.log(this.props);
+
+    // console.log(this.props);
     const { projects } = this.props;
-    console.log(projects);
+    // console.log(projects);
 
     return (
       <div className="dashboard container">
@@ -27,7 +28,10 @@ export class Dashboard extends Component {
 }
 
 
+
 const mapStateToProps = state => {
+  console.log(state);
+
   return {
     projects: state.project.projects
   }
