@@ -21,10 +21,12 @@ class CreateProject extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
 
+
+    // console.log(this.props.onCreateProject({ hello: "ddc" }));
+
     this.props.onCreateProject(this.state);
 
 
-    // console.log(this.state);
 
   }
 
